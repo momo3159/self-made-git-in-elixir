@@ -7,7 +7,7 @@ defmodule Init do
     successMessage =
       if Enum.member?(files, ".git") do
         # reinitialize
-        File.rmdir!(gitRepositoryPath)
+        File.rm_rf!(gitRepositoryPath)
         "Reinitialized existing Git repository in #{gitRepositoryPath}"
       else
         "Initialized empty Git repository in #{gitRepositoryPath}"
