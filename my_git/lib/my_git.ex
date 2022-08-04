@@ -14,7 +14,7 @@ defmodule MyGit do
     end
 
     case hd(args) do
-      "init" -> ""
+      "init" -> Init.init()
       "add" -> ""
       "commit" -> ""
       "log" -> ""
