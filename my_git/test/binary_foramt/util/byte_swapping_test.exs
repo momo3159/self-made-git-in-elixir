@@ -3,7 +3,7 @@ defmodule ByteSwappingTest do
 
   use ExUnit.Case, async: false
 
-  describe "ネットワークオーダーからリトルエンディアンへの変換" do
+  describe "エンディアンへの変換" do
     test("引数が0byteのバイナリ") do
       assert ByteSwapping.byte_swapping(<<>>) == <<>>
     end
