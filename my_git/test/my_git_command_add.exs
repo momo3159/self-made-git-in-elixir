@@ -6,8 +6,8 @@ defmodule AddCommandTest do
   import Mock
 
   describe "コマンドの引数に何も指定されない時" do
-    test("エラーが発生し，処理を終了する") do
-
+    test("「Nothing specified, nothing added.」というメッセージを出す") do
+      
     end
   end
 
@@ -82,7 +82,7 @@ defmodule AddCommandTest do
     end
 
     test("gitレポジトリ配下のファイルが登録されている") do
-      
+
     end
   end
 end
