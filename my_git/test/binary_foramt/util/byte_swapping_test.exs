@@ -24,6 +24,5 @@ defmodule ByteSwappingTest do
       assert_raise(ArgumentError, fn -> ByteSwapping.byte_swapping(<<0::1>>) end)
       assert_raise(ArgumentError, fn -> ByteSwapping.byte_swapping(<<0, 1::7>>) end)
     end
-
   end
 end
