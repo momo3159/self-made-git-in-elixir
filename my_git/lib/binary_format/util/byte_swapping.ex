@@ -1,13 +1,13 @@
 defmodule MyGit.BinaryFormat.Util.ByteSwapping do
-  def network_to_little_endian(<<>>) do
+  def byte_swapping(<<>>) do
     <<>>
   end
 
-  def network_to_little_endian(<<x::8>>) do
+  def byte_swapping(<<x::8>>) do
     <<x>>
   end
 
-  def network_to_little_endian(b) do
+  def byte_swapping(b) do
     if not is_binary(b) do
       raise ArgumentError, message:  "the argument is not binary."
     end
