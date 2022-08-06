@@ -2,6 +2,7 @@ defmodule InitCommandTest do
   use ExUnit.Case, async: false
 
   import Mock
+  alias MyGit.Command.Init
 
   describe "Gitレポジトリの初期化処理" do
     setup_with_mocks([

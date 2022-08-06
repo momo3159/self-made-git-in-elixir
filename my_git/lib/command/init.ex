@@ -1,4 +1,4 @@
-defmodule Init do
+defmodule MyGit.Command.Init do
   def init() do
     currentDirPath = File.cwd!()
     gitRepositoryPath = "#{currentDirPath}/.git"
