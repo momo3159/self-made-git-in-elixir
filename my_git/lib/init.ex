@@ -30,7 +30,6 @@ defmodule Init do
   defp touchHEADFile(path) do
     File.touch!("#{path}/HEAD")
     File.write!("#{path}/HEAD", "ref: refs/heads/master")
-    # TODO: HEADにref: refs/heads/masterを書き込む
   end
 
   defp touchConfigFile(path) do
@@ -49,7 +48,7 @@ defmodule Init do
   end
 
   defp touchDescriptionFile(path) do
-    File.touch("#{path}/description")
+    File.touch!("#{path}/description")
     # Unnamed repository; edit this file 'description' to name the repository.
   end
 
